@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: legal
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: legal
+  template:
+    metadata:
+      labels:
+        app: legal
+    spec:
+      containers:
+        - name: legal
+          image: legal:latest
+          ports:
+            - containerPort: 80
