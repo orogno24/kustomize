@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bond
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bond
+  template:
+    metadata:
+      labels:
+        app: bond
+    spec:
+      containers:
+        - name: bond
+          image: bond:latest
+          ports:
+            - containerPort: 80
