@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: genie-fe
+
+replicas:
+  - name: afterloan-fe
+    count: 2
+
+resources:
+  - ../../base
+
+images:
+  - name: afterloan
+    newName: harbor.dev.jtcsb.co.kr/jtcsb/afterloan-fe
+    newTag: "0.1"
