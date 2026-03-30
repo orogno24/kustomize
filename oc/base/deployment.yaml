@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: oc
+  template:
+    metadata:
+      labels:
+        app: oc
+    spec:
+      containers:
+        - name: oc
+          image: oc:latest
+          ports:
+            - containerPort: 80
