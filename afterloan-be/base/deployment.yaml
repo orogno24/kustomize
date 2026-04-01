@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: afterloan-be
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: afterloan-be
@@ -16,4 +16,4 @@ spec:
         - name: afterloan-be
           image: afterloan-be:latest
           ports:
-            - containerPort: 80
+            - containerPort: 8080
