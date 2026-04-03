@@ -11,6 +11,6 @@ resources:
   - ../../base
 
 images:
-  - name: genie-us
+  - name: genie-us-fe
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-fe
     newTag: "5bdd3c5"
