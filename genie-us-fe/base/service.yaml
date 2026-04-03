@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: genie-us-be
+  name: genie-us-fe
 spec:
   selector:
-    app: genie-us-be
+    app: genie-us-fe
   type: ClusterIP
   ports:
     - protocol: TCP
