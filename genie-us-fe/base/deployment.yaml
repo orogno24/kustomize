@@ -16,7 +16,4 @@ spec:
         - name: genie-us-fe
           image: genie-us-fe:latest
           ports:
-            - containerPort: 8080
-          env:
-          - name: BUILD_MODE
-            value: example
+            - containerPort: 80
