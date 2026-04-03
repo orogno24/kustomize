@@ -12,5 +12,5 @@ resources:
 
 images:
   - name: afterloan
-    newName: harbor.dev.jtcsb.co.kr/jtcsb/afterloan-be
+    newName: harbor.jtchinae-bank.co.kr/jtcsb/afterloan-be
     newTag: "0.1"
