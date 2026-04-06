@@ -8,3 +8,4 @@ data:
   SPRING_DATASOURCE_PASSWORD: genieus1234
   SPRING_DATA_REDIS_HOST: "redis-master.common.svc.cluster.local"
   SPRING_DATA_REDIS_PORT: "6379"
+  SPRING_DATA_REDIS_PASSWORD: "JTcsb!23"
