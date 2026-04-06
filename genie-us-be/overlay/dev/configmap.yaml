@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: genie-us-be-app-config
 data:
-  SPRING_DATASOURCE_URL: "jdbc:postgresql://10.10.10.137:5432/genieus"
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://10.10.10.137:5432/genieus?sslmode=disable"
   SPRING_DATA_REDIS_HOST: "redis"
