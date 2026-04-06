@@ -17,3 +17,6 @@ spec:
           image: genie-us-fe:latest
           ports:
             - containerPort: 80
+          env:
+          - name: NODE_ENV
+            value: dev
