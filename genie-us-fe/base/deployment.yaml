@@ -18,5 +18,7 @@ spec:
           ports:
             - containerPort: 80
           env:
-          - name: NODE_ENV
-            value: dev
+          - name: API_PROXY_URL
+            value: "https://api.jtchinae-bank.co.kr"
+          - name: VITE_API_BASE_URL
+            value: "/api"
