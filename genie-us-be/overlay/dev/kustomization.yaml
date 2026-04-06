@@ -9,6 +9,10 @@ replicas:
 
 resources:
   - ../../base
+  - configmap.yaml
+
+patches:
+  - path: deployment-env.yaml
 
 images:
   - name: genie-us-be
