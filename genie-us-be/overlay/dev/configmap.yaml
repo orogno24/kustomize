@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: genie-us-be-app-config
 data:
-  SPRING_DATASOURCE_URL: "jdbc:postgresql://pgdb-dev:5432/genieus?sslmode=disable"
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres.dev:5432/genieus?sslmode=disable"
   SPRING_DATASOURCE_USERNAME: genieus
   SPRING_DATASOURCE_PASSWORD: genieus1234
