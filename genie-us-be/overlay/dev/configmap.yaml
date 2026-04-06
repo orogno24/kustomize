@@ -1,0 +1,8 @@
+# 클러스터 안 PostgreSQL / Redis 서비스 DNS에 맞게 수정
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: genie-us-be-app-config
+data:
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres:5432/genieus?sslmode=disable"
+  SPRING_DATA_REDIS_HOST: "redis"
