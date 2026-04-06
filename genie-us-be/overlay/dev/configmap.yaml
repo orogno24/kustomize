@@ -4,7 +4,6 @@ metadata:
   name: genie-us-be-app-config
 data:
   SPRING_DATASOURCE_URL: "jdbc:postgresql://10.10.10.137:5432/genieus?sslmode=disable"
-  SPRING_DATA_REDIS_HOST: "redis"
   SPRING_DATASOURCE_USERNAME: genieus
   SPRING_DATASOURCE_PASSWORD: genieus1234
   SPRING_DATA_REDIS_HOST: genieus-redis
