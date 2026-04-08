@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: afterloan-pl
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: afterloan-pl
+  template:
+    metadata:
+      labels:
+        app: afterloan-pl
+    spec:
+      containers:
+        - name: afterloan-pl
+          image: afterloan-pl:latest
+          ports:
+            - containerPort: 8080
