@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: afterloan-au
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: afterloan-au
+  template:
+    metadata:
+      labels:
+        app: afterloan-au
+    spec:
+      containers:
+        - name: afterloan-au
+          image: afterloan-au:latest
+          ports:
+            - containerPort: 8080
