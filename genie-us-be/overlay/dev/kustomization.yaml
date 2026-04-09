@@ -17,4 +17,4 @@ patches:
 images:
   - name: genie-us-be
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-be
-    newTag: "0f10310"
+    newTag: "b77dc8e"
