@@ -13,4 +13,4 @@ resources:
 images:
   - name: genie-us-permission-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-permission-service
-    newTag: "6fd4264"
+    newTag: "85e6b89"
