@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: afterloan-be
+  name: genie-us-permission
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: afterloan-be
+      app: genie-us-permission
   template:
     metadata:
       labels:
-        app: afterloan-be
+        app: genie-us-permission
     spec:
       containers:
-        - name: afterloan-be
-          image: afterloan-be:latest
+        - name: genie-us-permission
+          image: genie-us-permission:latest
           ports:
             - containerPort: 8080
