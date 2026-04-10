@@ -1,16 +1,16 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: genie-us-auth
+namespace: genie-be
 
 replicas:
-  - name: genie-us-auth
+  - name: genie-be
     count: 2
 
 resources:
   - ../../base
 
 images:
-  - name: genie-us-auth
-    newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-auth
+  - name: genie-us-auth-service
+    newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-auth-service
     newTag: "81243ab"
