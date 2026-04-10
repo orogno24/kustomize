@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: afterloan-au
+  name: genie-us-auth
 spec:
   selector:
-    app: afterloan-au
+    app: genie-us-auth
   type: ClusterIP
   ports:
     - protocol: TCP
