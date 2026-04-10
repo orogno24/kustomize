@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: afterloan-fe
+  name: genie-us-front
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: afterloan-fe
+      app: genie-us-front
   template:
     metadata:
       labels:
-        app: afterloan-fe
+        app: genie-us-front
     spec:
       containers:
-        - name: afterloan-fe
-          image: afterloan-fe:latest
+        - name: genie-us-front
+          image: genie-us-front:latest
           ports:
             - containerPort: 80
