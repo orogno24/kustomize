@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: genie-us-postloan
+  name: genie-us-postloan-service
+  namespace: genie-us-be
 spec:
   selector:
-    app: genie-us-postloan
+    app: genie-us-postloan-service
   type: ClusterIP
   ports:
     - protocol: TCP
