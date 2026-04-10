@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Congigmap
+metadata:
+  name: genie-us-permission-service-app-config
+data:
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres.dev:5432/genieus?sslmode=disable"
+  SPRING_DATASOURCE_USERNAME: genieus
+  SPRING_DATASOURCE_PASSWORD: genieus1234
+  SPRING_DATA_REDIS_HOST: "redis-master.common.svc.cluster.local"
+  SPRING_DATA_REDIS_PORT: "6379"
+  SPRING_DATA_REDIS_PASSWORD: "JTcsb!23"
