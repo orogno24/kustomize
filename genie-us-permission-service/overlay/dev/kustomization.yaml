@@ -9,6 +9,7 @@ replicas:
 
 resources:
   - ../../base
+  - configmap.yaml
 
 images:
   - name: genie-us-permission-service
