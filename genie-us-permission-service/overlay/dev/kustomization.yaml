@@ -1,16 +1,16 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: genie-be
+namespace: genie-us-permission
 
 replicas:
-  - name: afterloan-be
+  - name: genie-us-permission
     count: 2
 
 resources:
   - ../../base
 
 images:
-  - name: afterloan-be
-    newName: harbor.jtchinae-bank.co.kr/jtcsb/afterloan-be
+  - name: genie-us-permission
+    newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-permission
     newTag: "0.1"
