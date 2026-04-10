@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: afterloan-fe
+  name: genie-us-front
 spec:
   selector:
-    app: afterloan-fe
+    app: genie-us-front
   type: ClusterIP
   ports:
     - protocol: TCP
