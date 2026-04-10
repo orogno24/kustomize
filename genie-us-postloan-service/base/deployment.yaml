@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: afterloan-pl
+  name: genie-us-postloan-service
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: afterloan-pl
+      app: genie-us-postloan-service
   template:
     metadata:
       labels:
-        app: afterloan-pl
+        app: genie-us-postloan-service
     spec:
       containers:
-        - name: afterloan-pl
-          image: afterloan-pl:latest
+        - name: genie-us-postloan-service
+          image: genie-us-postloan-service:latest
           ports:
             - containerPort: 8080
