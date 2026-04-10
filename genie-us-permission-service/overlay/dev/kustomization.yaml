@@ -11,6 +11,9 @@ resources:
   - ../../base
   - configmap.yaml
 
+patches:
+  - path: deployment-env.yaml
+
 images:
   - name: genie-us-permission-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-permission-service
