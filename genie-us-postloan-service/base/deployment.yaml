@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: genie-us-postloan-service
+  name: genie-us-postloan
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: genie-us-postloan-service
+      app: genie-us-postloan
   template:
     metadata:
       labels:
-        app: genie-us-postloan-service
+        app: genie-us-postloan
     spec:
       containers:
-        - name: genie-us-postloan-service
-          image: genie-us-postloan-service:latest
+        - name: genie-us-postloan
+          image: genie-us-postloan:latest
           ports:
             - containerPort: 8080
