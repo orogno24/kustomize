@@ -4,13 +4,13 @@ kind: Kustomization
 namespace: genie-us-fe
 
 replicas:
-  - name: genie-us-front-service
+  - name: genie-us-front
     count: 2
 
 resources:
   - ../../base
 
 images:
-  - name: genie-us-front-service
+  - name: genie-us-front
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-front
     newTag: "345157f"
