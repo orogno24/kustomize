@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: afterloan-au
+  name: genie-us-auth
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: afterloan-au
+      app: genie-us-auth
   template:
     metadata:
       labels:
-        app: afterloan-au
+        app: genie-us-auth
     spec:
       containers:
-        - name: afterloan-au
-          image: afterloan-au:latest
+        - name: genie-us-auth
+          image: genie-us-auth:latest
           ports:
             - containerPort: 8080
