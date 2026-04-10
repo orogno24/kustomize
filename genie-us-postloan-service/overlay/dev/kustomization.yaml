@@ -1,16 +1,16 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: genie-us-postloan
+namespace: genie-us-be
 
 replicas:
-  - name: genie-us-postloan
+  - name: genie-us-postloan-service
     count: 2
 
 resources:
   - ../../base
 
 images:
-  - name: genie-us-postloan
-    newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-postloan
+  - name: genie-us-postloan-service
+    newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-postloan-service
     newTag: "0.1"
