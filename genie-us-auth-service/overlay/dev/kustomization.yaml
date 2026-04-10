@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: genie-us-be
 
 replicas:
-  - name: genie-be
+  - name: genie-us-auth
     count: 2
 
 resources:
