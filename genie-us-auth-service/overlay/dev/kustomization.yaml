@@ -13,4 +13,4 @@ resources:
 images:
   - name: genie-us-auth-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-auth-service
-    newTag: "fa12f30"
+    newTag: "6b27fa3"
