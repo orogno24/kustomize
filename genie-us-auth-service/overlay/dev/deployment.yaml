@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: genie-us-auth-service
+  namespace: genie-us-be
+spec:
+  template:
+    spec:
+      containers:
+        - name: genie-us-auth-service
+          env:
+            - key: SPRING_PROFILES_ACTIVE
+              value: dev
