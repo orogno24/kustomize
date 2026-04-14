@@ -11,6 +11,8 @@ spec:
           envFrom:
             - configMapRef:
                 name: genie-us-permission-service-app-config
+            - secretRef:
+                name: genie-us-permission-service-app-secret
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: dev
