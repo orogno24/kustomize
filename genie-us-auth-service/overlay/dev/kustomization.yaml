@@ -10,6 +10,9 @@ replicas:
 resources:
   - ../../base
 
+patches:
+  - path: deployment.yaml
+
 images:
   - name: genie-us-auth-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-auth-service
