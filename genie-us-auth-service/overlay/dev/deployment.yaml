@@ -9,5 +9,5 @@ spec:
       containers:
         - name: genie-us-auth-service
           env:
-            - key: SPRING_PROFILES_ACTIVE
+            - name: SPRING_PROFILES_ACTIVE
               value: dev
