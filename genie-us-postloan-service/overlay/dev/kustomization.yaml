@@ -10,6 +10,9 @@ replicas:
 resources:
   - ../../base
 
+patches:
+  - deployment.yaml
+
 images:
   - name: genie-us-postloan-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-postloan-service
