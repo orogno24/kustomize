@@ -11,7 +11,7 @@ resources:
   - ../../base
 
 patches:
-  - deployment.yaml
+  - path: deployment.yaml
 
 images:
   - name: genie-us-postloan-service
