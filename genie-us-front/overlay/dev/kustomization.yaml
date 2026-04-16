@@ -14,22 +14,3 @@ images:
   - name: genie-us-front-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-front
     newTag: "cff2a34"
-
-patches:
-  - patch: |-
-      apiVersion: apps/v1
-      kind: Deployment
-      metadata:
-        name: genie-us-front-service
-      spec:
-        template:
-          spec:
-            containers:
-              - name: genie-us-front-service
-                volumeMounts:
-                  - name: board-file
-                    mountPath: /board_file
-            volumes:
-              - name: board-file
-                persistentVolumeClaim:
-                  claimName: board-file-pvc
