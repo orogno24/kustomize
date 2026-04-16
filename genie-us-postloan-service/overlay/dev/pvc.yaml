@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: genie-us-postloanservice-pvc
+  name: genie-us-postloan-service-pvc
   namespace: genie-us-be
 spec:
   accessModes:
