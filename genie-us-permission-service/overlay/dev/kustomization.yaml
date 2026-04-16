@@ -14,7 +14,7 @@ resources:
   - pvc.yaml
 
 patches:
-  - path: deployment-env.yaml
+  - path: deployment.yaml
 
 images:
   - name: genie-us-permission-service
