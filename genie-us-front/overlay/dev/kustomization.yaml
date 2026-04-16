@@ -13,4 +13,4 @@ resources:
 images:
   - name: genie-us-front-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-front
-    newTag: "6332dab"
+    newTag: "e4a76f0"
