@@ -9,7 +9,6 @@ replicas:
 
 resources:
   - ../../base
-  - pvc.yaml
 
 patches:
   - path: deployment.yaml
