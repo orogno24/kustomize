@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: genie-us-permission-service
+  namespace: genie-us-be
+spec:
+  template:
+    spec:
+      containers:
+        - name: genie-us-permission-service
+          envFrom:
+            - configMapRef:
+                name: genie-us-permission-service-app-config
+            - secretRef:
+                name: genie-us-permission-service-app-secret
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: dev
