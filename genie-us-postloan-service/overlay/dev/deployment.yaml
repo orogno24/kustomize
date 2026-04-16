@@ -11,3 +11,7 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: dev
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: genie-us-postloan-service-pvc
