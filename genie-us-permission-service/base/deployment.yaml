@@ -18,3 +18,10 @@ spec:
           image: genie-us-permission-service:latest
           ports:
             - containerPort: 8080
+          volumeMounts:
+            - name: board-file
+              mountPath: /board_file
+      volumes:
+        - name: board-file
+          persistentVolumeClaim:
+            claimName: board-file-pvc
