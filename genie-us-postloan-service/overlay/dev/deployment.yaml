@@ -11,7 +11,10 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: dev
+          volumeMounts:
+            - mountPath: /board_file
+              name: board
       volumes:
-        - name: data
+        - name: board
           persistentVolumeClaim:
             claimName: genie-us-postloan-service-pvc
