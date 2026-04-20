@@ -16,4 +16,4 @@ patches:
 images:
   - name: genie-us-auth-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-auth-service
-    newTag: "a1b9382"
+    newTag: "687fe5a"
