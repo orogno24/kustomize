@@ -6,3 +6,4 @@ metadata:
 data:
   SPRING_DATA_REDIS_HOST: "redis-master.common.svc.cluster.local"
   SPRING_DATA_REDIS_PORT: "6379"
+  SPRING_DATA_SWAGGER_SERVER_URL: "https://api.jtchinae-bank.co.kr"
