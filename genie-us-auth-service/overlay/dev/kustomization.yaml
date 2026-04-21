@@ -9,6 +9,8 @@ replicas:
 
 resources:
   - ../../base
+  - configmap.yaml
+  - secret.yaml
 
 patches:
   - path: deployment.yaml
