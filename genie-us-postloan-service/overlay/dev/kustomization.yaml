@@ -16,4 +16,4 @@ patches:
 images:
   - name: genie-us-postloan-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-postloan-service
-    newTag: "f5f9863"
+    newTag: "f771021"
