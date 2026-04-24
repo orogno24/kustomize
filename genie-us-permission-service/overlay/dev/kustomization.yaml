@@ -18,4 +18,4 @@ patches:
 images:
   - name: genie-us-permission-service
     newName: harbor.jtchinae-bank.co.kr/jtcsb/genie-us-permission-service
-    newTag: "6fe5b94"
+    newTag: "3a1400b"
