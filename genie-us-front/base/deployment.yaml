@@ -5,7 +5,7 @@ metadata:
   namespace: genie-us-fe
 spec:
   replicas: 2
-  revisionHistoryLimit: 10
+  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app: genie-us-front-service
